@@ -21,14 +21,11 @@
             Çevre = <span id="cevre"></span>
             <script type="text/javascript">
                 document.getElementById('cevreHesapla').addEventListener('click', cevreHesapla);
-                /**
-                 * Yukarıdaki satır, id'si cevreHesapla olan butona tıklandığında cevreHesapla() fonksiyonunun çalışmasını sağlamaktadır.
-                 * cevreHesapla() fonksiyonun amacı name değeri "cebmerYaricap" olan input'dan yarıcap verisini alarak çemberin çevresini hesaplamak ve bu değeri id değeri cevre olan <span> etiketine yazdırmaktır.
-                 * Çemberin çevresi 2πr formülü ile hesaplanır.
-                 *
-                 * Aşağıda içeriği boş olan fonksiyonu amacına uygun şekilde yazınız.
-                 */
+               
                 function cevreHesapla() {
+                    var cemberYaricap = document.getElementById('giris').value;
+	                document.getElementById('cevreHesapla').innerHTML = cemberYaricap;
+
                 }
             </script>
         </div>
